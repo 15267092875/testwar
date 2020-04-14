@@ -8,6 +8,8 @@ pipeline {
                 input "Does this environment look ok?"
                 echo 'Building'
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/15267092875/druid.git']]])
+                sh label: '', script: 'pwd && ls'
+                
             }
         }
         stage('Test') {
