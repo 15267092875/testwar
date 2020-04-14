@@ -3,6 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo 'choose env'
+                input "Does this environment look ok?"
                 echo 'Building'
             }
         }
@@ -14,6 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
+                input "Are you sure deploy?"
             }
         }
     }
