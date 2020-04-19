@@ -1,3 +1,3 @@
 # testwar
 war demo 
-cidemo
+ci demo
