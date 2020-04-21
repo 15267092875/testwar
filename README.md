@@ -8,14 +8,12 @@ DEMO-11:内容测试. DEMO-13:B IS b. TEST-1:c is c！TEST-2:不新增！
 panel area
 {panel:bgColor=#97FF94}
 
-Test JIRA commit
-{{Author:$AUTHOR}}
-{{commit                   $COMMIT_ID}}
-{{code review:         $GIT_URL}}
-{{message:              $COMMIT_MESSAGE}}
-
 Commit message:
+{{Author:$AUTHOR}}
+{{commitid:$COMMIT_ID}}
+{{code review:$GIT_URL}}
+
 {code}
-code area
+$COMMIT_MESSAGE
 {code}
 {panel}
