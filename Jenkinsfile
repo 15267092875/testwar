@@ -1,9 +1,20 @@
+#!groovy
+
+@Library('jenkinslib')
+
+def tools = new org.opsdev.tools()
+
 pipeline {
     agent any
     stages {
         stage('Build') {
             steps {
-                
+                timeout(time:30,unit:'MINUTES'){
+                    scripts(){
+                        println("ceshi sharelib")
+                        tools.printMe('this is my sharelib!')
+                    }
+                }
                 echo 'choose env'
                 input "Does this environment look ok?"
                 echo 'Building'
