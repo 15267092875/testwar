@@ -2,7 +2,7 @@
 
 @Library('sharelib')
 
-def tools = new org.opsdev.tools()
+def tools = new org.opsdev.print()
 
 pipeline {
     agent any
