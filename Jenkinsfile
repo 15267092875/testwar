@@ -2,7 +2,7 @@
 
 @Library('sharelib')
 
-def tools = new org.opsdev.print()
+def print = new org.opsdev.print()
 
 pipeline {
     agent any
@@ -12,7 +12,7 @@ pipeline {
                 timeout(time:30,unit:'MINUTES'){
                     scripts(){
                         println("ceshi sharelib")
-                        tools.printMe('this is my sharelib!')
+                        print.printMe('this is my sharelib!')
                     }
                 }
                 echo 'choose env'
