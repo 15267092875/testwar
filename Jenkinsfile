@@ -11,7 +11,7 @@ pipeline {
             steps {
                 timeout(time:30,unit:'MINUTES'){
                     script(){
-                        println("ceshi sharelib")
+                        hello()
                         tool.PrintMe('this is my sharelib!')
                     }
                 }
