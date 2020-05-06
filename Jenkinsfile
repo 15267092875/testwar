@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('jenkinslib')
+@Library('sharelib')
 
 def tools = new org.opsdev.tools()
 
