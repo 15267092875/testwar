@@ -12,7 +12,7 @@ pipeline {
                 timeout(time:30,unit:'MINUTES'){
                     script(){
                         println("ceshi sharelib")
-                        tool.printMe('this is my sharelib!')
+                        tool.PrintMe('this is my sharelib!')
                     }
                 }
                 echo 'choose env'
